@@ -1,0 +1,21 @@
+jang@ubuntu:~$ sftp -P 2220 bandit18@bandit.labs.overthewire.org
+This is a OverTheWire game server. More information on http://www.overthewire.org/wargames
+
+bandit18@bandit.labs.overthewire.org's password: 
+Connected to bandit.labs.overthewire.org.
+sftp> ls
+readme  
+sftp> cat readme
+Invalid command.
+sftp> get readme
+Fetching /home/bandit18/readme to readme
+/home/bandit18/readme                        100%   33     0.1KB/s   00:00    
+sftp> exit
+jang@ubuntu:~$ ls
+data12.out     data.txt   -file00  -file04  -file08   Public
+data5.bin      Desktop    -file01  -file05  -file09   readme
+data6.bin.out  Documents  -file02  -file06  Music     Templates
+data8.bin      Downloads  -file03  -file07  Pictures  Videos
+jang@ubuntu:~$ cat readme
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+jang@ubuntu:~$ 
